@@ -103,7 +103,7 @@ header nav {
   float: right;
 }
 header nav ul li {
-  float: left;
+ 
   display:inline-block;
   margin-top: 20px;
   font-size: 0.9em;
