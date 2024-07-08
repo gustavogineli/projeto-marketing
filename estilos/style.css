@@ -120,8 +120,6 @@ header nav ul li a {
 
 
 #hero-image {
-  margin: auto;
-  width:940px ;
   height: 580px;
   padding-top: 1px;
   background: #e8eced url('../imagens/hero.jpg') no-repeat ;
@@ -150,3 +148,75 @@ header nav ul li a {
   background-color: #02b8dd;
   color: white;
 }
+
+/* Estilos gerais para a seção de features */
+#features {
+  padding: 50px 0; /* Ajuste conforme necessário */
+  background-color: #f2f2f2; /* Exemplo de cor de fundo */
+}
+
+.wrapper {
+  max-width: 940px; /* Define a largura máxima para o conteúdo */
+  margin: 0 auto; /* Centraliza o conteúdo */
+  overflow: hidden; /* Limpa floats */
+}
+
+.features-list {
+  list-style-type: none; /* Remove os marcadores da lista */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between; /* Distribui os itens igualmente */
+}
+
+.features-list li {
+  position: relative; /* Define posição relativa para o item da lista */
+  flex: 1; /* Faz com que cada item ocupe espaço igual */
+  margin-right: 20px; /* Espaçamento entre os itens */
+  text-align: center;
+  padding: 20px;
+}
+
+#feature .features-list li {
+  width: 300px;
+  height: 240px;
+}
+
+.features-list li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  z-index: -1; /* Coloca a imagem de fundo atrás do conteúdo */
+}
+
+.feature-1::before {
+  background-image: url('../imagens/features-icon-1.png');
+}
+
+.feature-2::before {
+  background-image: url('../imagens/features-icon-2.png');
+}
+
+.feature-3::before {
+  background-image: url('../imagens/features-icon-3.png');
+}
+
+/* Estilos para telas menores (responsivo) */
+@media (max-width: 768px) {
+  .features-list {
+    flex-direction: column; /* Empilha os itens em coluna */
+  }
+
+  .features-list li {
+    margin-right: 0; /* Remove margem entre os itens */
+    margin-bottom: 20px; /* Adiciona espaçamento entre os itens */
+  }
+}
+
+
