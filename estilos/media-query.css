@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/* Estilos para telas menores (responsivo) */
+@media (max-width: 768px)  {
+
+  .features-list {
+    flex-direction: column; /* Empilha os itens em coluna */
+  }
+
+  .features-list li {
+    margin-right: 0; /* Remove margem entre os itens */
+    margin-bottom: 20px; /* Adiciona espaçamento entre os itens */
+  }
+
+  #features ul li {
+    width: 400px;
+    margin-left: 20px;
+  }
+
+  #features {
+    transition: width .3s, heigth .3s;
+    transition-timing-function: ease;
+  }
+}
+
