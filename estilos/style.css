@@ -184,4 +184,34 @@ header nav ul li a {
 }
 
 
+#primary-content {
+  background-color:  #f2f2f2;
+  padding: 60px 0;
+  text-align: center;
+}
+
+#primary-content h3 {
+ font-size: 1.3em;
+  width: 400px;
+ display: block;
+ margin: 0 auto 20px auto;
+ border-bottom: 1px solid #02b8dd;
+ padding: 0 0  20px 0;
+
+}
+
+.video-div{
+  background-color: var(--cor5);
+  margin: 0px -20px 30px -20px;
+  padding: 20px;
+  padding-bottom: 58%;
+
+  
+}
+
+.video-div > iframe {
+  width: 90%;
+  height: 90%;
+}
+
 
