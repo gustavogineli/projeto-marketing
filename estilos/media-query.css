@@ -3,17 +3,29 @@
 /* Estilos para telas menores (responsivo) */
 @media (max-width: 768px)  {
 
+  #hero-image {
+    height: 390px;
+  }
+
+  #hero-image h2 {
+    margin: 180px auto;
+  }
+
+  .button-1 {
+    display: none;
+  }
+
   .features-list {
     flex-direction: column; /* Empilha os itens em coluna */
   }
 
   .features-list li {
     margin-right: 0; /* Remove margem entre os itens */
-    margin-bottom: 20px; /* Adiciona espaçamento entre os itens */
+    margin-bottom: 30px; /* Adiciona espaçamento entre os itens */
   }
 
   #features ul li {
-    width: 400px;
+    width: 300px;
     margin-left: 20px;
   }
 
