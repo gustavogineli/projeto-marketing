@@ -13,14 +13,15 @@
   <header>
     <div class="wrapper">
       <h1>Simply</h1>
-      <nav>
+      <span id="burguer" class="material-icons"  onclick="clickMenu()">menu</span>
+      <menu id="itens">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Portifolio</a></li>
           <li><a href="#">Contact</a></li>
           <li><a href="#">Blog</a></li>
         </ul>
-      </nav>
+      </menu>
     </div>
   </header>
 
@@ -76,28 +77,24 @@
           
               <section id="secondary-content">
                 <div class="wrapper">
-                  <div id="secondary-list">
-              <article>
-                <div class="article-image">
-                  <img src="imagens/article-image-1.jpg" alt="">
-                </div>
+                 
+              <article style="background-image: url(imagens/article-image-1.jpg);">
               <div class="overplay">
                 <h4>Secondary Content</h4>
-                  <p><small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, tenetur blanditiis laboriosam quam consectetur a voluptates illum, molestias rem ab modi unde at obcaecati nihil facere minus odio ipsum amet.</small></p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, tenetur blanditiis laboriosam quam consectetur a voluptates illum, molestias rem ab modi unde at obcaecati nihil facere minus odio ipsum amet.</p>
+                  <a href="#" class="more-link">View more</a>
               </div>
             </article>
-              <article>
-                <div class="article-image">
-                  <img src="imagens/article-image-2.jpg" alt="">
-                </div>
+              <article style="background-image: url(imagens/article-image-2.jpg);">
               <div class="overplay">
                 <h4>Secondary Content</h4>
-                <p><small>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum id inventore dicta repellat quae veniam laboriosam totam architecto delectus, distinctio sit repudiandae dolorum velit corrupti dignissimos adipisci, quam commodi sequi?</small></p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum id inventore dicta repellat quae veniam laboriosam totam architecto delectus, distinctio sit repudiandae dolorum velit corrupti dignissimos adipisci, quam commodi sequi?</p>
+                <a href="#" class="more-link">View more</a>
               </div>
                </article> 
                 <div class="clear"></div>
                   </div>
-            </div>
+          
     </section>
 
   <div id="cta">
@@ -142,4 +139,23 @@
     </div>
   </footer>
 </body>
+
+<script>
+  function mudouTamanho(){
+    if (window.innerWidth >= 768){
+    itens.style.display = 'block'
+  } else {
+    itens.style.display = 'none'
+  }
+}
+
+
+  function clickMenu(){
+    if (itens.style.display == 'block') {
+        itens.style.display = 'none'
+    } else {
+      itens.style.display = 'block'
+    }
+  }
+</script>
 </html>
