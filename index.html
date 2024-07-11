@@ -13,7 +13,7 @@
   <header>
     <div class="wrapper">
       <h1>Simply</h1>
-    
+      <span id="burger" class="material-icons" onclick="toggleMenu()">menu</span>
       <menu id="itens">
         <ul>
           <li><a href="#">Home</a></li>
@@ -140,4 +140,11 @@
     </div>
   </footer>
 </body>
+
+<script>
+  function toggleMenu() {
+    var menuItems = document.getElementById("items");
+    menuItems.classList.toggle("show");
+  }
+</script>
 </html>

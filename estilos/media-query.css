@@ -1,52 +1,104 @@
 @charset "UTF-8";
 
 /* Estilos para telas menores (responsivo) */
-@media (max-width: 768px)  {
 
-
-  .wrapper {
-    max-width: 420px;
+  @media (max-width: 768px) {
+    .wrapper {
+      max-width: 90%; /* Ajusta a largura máxima para telas menores */
+      padding: 0 15px; /* Adiciona um padding mais estreito */
+    }
+  
+    header {
+      height: auto; /* Ajusta a altura do cabeçalho automaticamente */
+      padding: 10px 0; /* Espaçamento interno menor */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    header h1 {
+      margin-left: 0; /* Remove a margem esquerda do título */
+      font-size: 1.2em; /* Reduz o tamanho da fonte */
+    }
+  
+    header #burger {
+      display: block; /* Mostra o ícone do menu hambúrguer */
+    }
+  
+    header #items {
+      display: none; /* Esconde os itens do menu por padrão */
+      position: absolute;
+      top: 70px; /* Ajusta a posição vertical */
+      right: 0;
+      background-color: #f2f2f2;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      z-index: 1; /* Coloca o menu sobre os outros elementos */
+    }
+  
+    header #items.show {
+      display: block; /* Mostra os itens do menu quando a classe 'show' é aplicada */
+    }
+  
+    header #items ul {
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+    }
+  
+    header #items ul li {
+      margin-top: 10px;
+      font-size: 1em;
+    }
+  
+    header #items ul li a {
+      display: block;
+      padding: 10px 0;
+      color: #444;
+    }
+  
+    #hero-image {
+      height: 400px; /* Reduz a altura da seção de imagem hero */
+      padding-top: 80px; /* Ajusta o espaçamento interno */
+    }
+  
+    #hero-image h2 {
+      margin: 100px 0 20px 0; /* Ajusta o espaçamento do título */
+      font-size: 2em; /* Ajusta o tamanho do título */
+    }
+  
+    .features-list {
+      flex-direction: column; /* Empilha os itens de características em coluna */
+      align-items: center; /* Centraliza os itens */
+    }
+  
+    .features-list li {
+      margin-right: 0; /* Remove a margem entre os itens */
+      margin-bottom: 30px; /* Adiciona espaçamento entre os itens */
+    }
+  
+    #features ul li {
+      width: 70%; /* Ocupa toda a largura disponível */
+      margin-left: 0; /* Remove a margem esquerda */
+    }
+  
+    #primary-content h3 {
+      font-size: 1.1em; /* Ajusta o tamanho do título */
+      width: 100%; /* Ocupa toda a largura disponível */
+      padding: 10px 0 20px 0; /* Ajusta o espaçamento interno */
+    }
+  
+    #secondary-content {
+      margin: 30px 0; /* Ajusta a margem superior e inferior */
+    }
+  
+    #secondary-content article {
+      width: 100%; /* Ocupa toda a largura disponível */
+      height: auto; /* Ajusta a altura automaticamente */
+      margin-bottom: 30px; /* Adiciona espaçamento inferior */
+      float: none; /* Remove o float */
+    }
+  
+    #secondary-content article:first
   }
-
-  #hero-image {
-    height: 390px;
-  }
-
-  #hero-image h2 {
-    margin: 180px auto;
-  }
-
-  .button-1 {
-    display: none;
-  }
-
-  .features-list {
-    flex-direction: column; /* Empilha os itens em coluna */
-  }
-
-  .features-list li {
-    margin-right: 0; /* Remove margem entre os itens */
-    margin-bottom: 30px; /* Adiciona espaçamento entre os itens */
-  }
-
-  #features ul li {
-    width: 230px;
-    margin-left: 20px;
-  }
-
-  #features {
-    transition: width .3s, heigth .3s;
-    transition-timing-function: ease;
-  }
-
-  #primary-content h3 {
-    border: none;
-  }
-
-  #secondary-content article {
-    margin-bottom: 30px;
-    background-image: none;
-  }
-
-}
-
