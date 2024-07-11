@@ -100,5 +100,12 @@
       float: none; /* Remove o float */
     }
   
-    #secondary-content article:first
+    #secondary-content article:first-child {
+      margin-right: 0; /* Remove a margem direita do primeiro artigo */
+    }
+  
+    .overlay {
+      padding: 20px; /* Ajusta o espaçamento interno do overlay */
+    }
   }
+  
