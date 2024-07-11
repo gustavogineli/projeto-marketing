@@ -3,6 +3,11 @@
 /* Estilos para telas menores (responsivo) */
 @media (max-width: 768px)  {
 
+
+  .wrapper {
+    max-width: 420px;
+  }
+
   #hero-image {
     height: 390px;
   }
@@ -25,7 +30,7 @@
   }
 
   #features ul li {
-    width: 200px;
+    width: 230px;
     margin-left: 20px;
   }
 
@@ -33,5 +38,15 @@
     transition: width .3s, heigth .3s;
     transition-timing-function: ease;
   }
+
+  #primary-content h3 {
+    border: none;
+  }
+
+  #secondary-content article {
+    margin-bottom: 30px;
+    background-image: none;
+  }
+
 }
 

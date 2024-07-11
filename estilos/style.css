@@ -118,7 +118,6 @@ header menu ul li a {
  
 }
 
-
 #hero-image {
   height: 580px;
   padding-top: 1px;
@@ -225,6 +224,7 @@ header menu ul li a {
   width: 460px;
   height: 270px;
   float: left;
+  border-radius: 3px;
 }
 
 #secondary-content article:first-child {
@@ -238,6 +238,7 @@ header menu ul li a {
   padding: 20px;
   border: 1px solid rgba(209, 208, 208, 0.478);
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.117);
+  border-radius: 3px;
 }
 
 article h4 {
