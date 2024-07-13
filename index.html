@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Website</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
   <link rel="stylesheet" href="estilos/style.css">
   <link rel="stylesheet" href="estilos/reset.css">
   <link rel="stylesheet" href="estilos/media-query.css">
@@ -13,7 +14,7 @@
   <header>
     <div class="wrapper">
       <h1>Simply</h1>
-      <span id="burger" class="material-icons" onclick="toggleMenu()">menu</span>
+      <span id="burguer" class="material-icons"  onclick="clickMenu()">menu</span>
       <menu id="itens">
         <ul>
           <li><a href="#">Home</a></li>
@@ -104,47 +105,61 @@
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At doloribus, obcaecati libero doloremque voluptate quod, assumenda suscipit aliquid velit facilis labore et. Accusamus recusandae iusto ab doloremque maxime? Rem, eos.</p>
       <a href="#" class="button-2">Started</a>
     </div>
-
+  
   </div>
 
   </main>
-  <footer>
+  <footer style="background-color: #444; color: #f2f2f2;">
     <div class="wrapper">
-      <div id="footer-info">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quasi, alias optio voluptatem deserunt ducimus quibusdam quam autem exercitationem eius ut quo suscipit incidunt adipisci soluta molestiae delectus quis iusto.</p>
-      </div>
-      <div id="footer-links">
-        <ul>
-          <li><h5>Company</h5></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Meet the Team</a></li>
-          <li><a href="#">What We Do</a></li>
-          <li><a href="#">Careers</a></li>
-        </ul>
-        <ul>
-          <li><h5>Company</h5></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Meet the Team</a></li>
-          <li><a href="#">What We Do</a></li>
-          <li><a href="#">Careers</a></li>
-        </ul>
-        <ul>
-          <li><h5>Company</h5></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Meet the Team</a></li>
-          <li><a href="#">What We Do</a></li>
-          <li><a href="#">Careers</a></li>
-        </ul>
-      </div>
-      <div class="clear"></div>
+        <div>
+            <a href="#" id="back-to-top">  <span  class="material-icons">arrow_upward</span> </a>
+            
+        </div>
+        <div id="footer-links">
+            <ul>
+                <li><h5>Company</h5></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Meet the Team</a></li>
+                <li><a href="#">What We Do</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+            <ul>
+                <li><h5>Products</h5></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Plans & Pricing</a></li>
+                <li><a href="#">Contact Sales</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+            <ul>
+                <li><h5>Resources</h5></li>
+                <li><a href="#">Documentation</a></li>
+                <li><a href="#">Tutorials</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Community</a></li>
+            </ul>
+        </div>
+        <div class="clear"></div>
     </div>
-  </footer>
+</footer>
+
 </body>
 
 <script>
-  function toggleMenu() {
-    var menuItems = document.getElementById("items");
-    menuItems.classList.toggle("show");
+  function mudouTamanho(){
+    if (window.innerWidth >= 768){
+    itens.style.display = 'block'
+  } else {
+    itens.style.display = 'none'
+  }
+}
+
+
+  function clickMenu(){
+    if (itens.style.display == 'block') {
+        itens.style.display = 'none'
+    } else {
+      itens.style.display = 'block'
+    }
   }
 </script>
 </html>
