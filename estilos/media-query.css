@@ -76,6 +76,10 @@
     align-items: center; /* Centraliza os itens */
   }
 
+  #feature {
+    padding: 50px 0 5px 0;
+  } 
+
   .features-list li {
     width: 100%; /* Ocupa toda a largura disponível */
     margin: 0 0 30px 0; /* Adiciona espaçamento entre os itens */
@@ -83,10 +87,11 @@
 
   #features ul li {
     width: 75%; /* Ocupa toda a largura disponível */
-    margin-left: 0; /* Remove a margem esquerda */
+    margin-right: 0;
+    
   }
 
-  #primary-content h3 {
+  #primary-content h3, #cta h3  {
     font-size: 1.1em; /* Ajusta o tamanho do título */
     width: 100%; /* Ocupa toda a largura disponível */
     padding: 10px 0 20px 0; /* Ajusta o espaçamento interno */
