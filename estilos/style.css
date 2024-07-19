@@ -1,85 +1,75 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,500;1,700&display=swap');
+
+:root {
+  --backgroudcolor:#f2f2f2;
+  --cor001:#444;
+  --cor002:#02b8dd;
+  --cor003:#777;
+  --cor004:white;
+  
+
+  --fonte-padrao: Arial,Verdana,Helvetica,sans-serif;
+  --fonte-destaque: "Roboto", sans-serif;;
+  --fonte-destaque2: "Raleway", sans-serif;
+
+}
 
 body, html {
-  background-color: #f2f2f2;
-  color: #777;
-  font-family: 'Arsenal SC',Arial, Helvetica, sans-serif;
+  background-color: var(--backgroudcolor);
+  color: var(--cor003);
+  font-family: var(--fonte-padrao);
   font-weight: normal;
 }
 
 p {
   line-height: 20px;
   margin-bottom: 20px;
-  font-family: 'Arsenal SC', Arial, Helvetica, sans-serif;
+  font-family: var(--fonte-padrao);
 }
 
 h1 {
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-family: var(--fonte-destaque);
   font-weight: bold;
-  color: #444;
-  font-size: 45px;
-  margin-bottom: 20px;
+  color: var(--cor001);
+  text-transform: uppercase;
+
 }
 
 h2 {
-  font-weight: 300;
-  color: #444;
-  font-size: 55px;
+  color: var(--cor001);
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 20px;
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-family: var(--fonte-destaque);
 }
 
 h3 {
   font-size: 30px;
-  color: #444;
+  color: var(--cor001);
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 20px;
-  font-family: 'Arsenal SC', Arial, Helvetica, sans-serif;
-}
-
-h4 {
-  font-size: 24px;
-  color: #444;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-
-h5 {
-  font-size: 15px;
-  color: #444;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-family: 'Arsenal SC' ,Arial, Helvetica, sans-serif;
+  font-family: var(--fonte-destaque);
 }
 
 a {
   text-decoration: none;
-  color: #444;
+  color: var(--cor001);
 }
 
 a:hover {
-  color: #02b8dd;
+  color: var(--cor002);
 }
 
 strong {
   font-weight: bold;
 }
 
-small {
-  font-size: 13px;
-  color: #777;
-  font-style: italic;
-}
 
 .clear {
   clear:both;
@@ -102,7 +92,7 @@ header > h1 {
 }
 header h1 {
   
-  color: #02b8dd;
+  color: var(--cor002);
   font-size: 1.4em;
   float: left ;
 }
@@ -118,7 +108,7 @@ header menu ul li {
 }
 
 header menu ul li a {
-  color: #444;
+  color: var(--cor001);
   text-transform: uppercase;
   display: block;
   margin-right: 20px;
@@ -142,17 +132,30 @@ menu {
   background-size: cover;
   background-position: center center;
 }
+
 #hero-image h2 {
- margin: 180px 0 40px 0; 
- font-size: 1.5em;
+  margin: 180px 0 0 0; }
+
+.titulo-1 {
+  font-family: var(--fonte-destaque);
+  font-weight: 500;
+  font-size: 3em;
+ 
 }
+.titulo {
+ font-family: var(--fonte-destaque2);
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.8em;
+}
+
 .button-1 {
   display: block;
   text-align: center;
   background-color: #444;
   border: none;
   border-radius: 5px;
-  color: white;
+  color: var(--cor004);
   width: 180px;
   height: 50px;
   font-size: 1.3em;
@@ -162,15 +165,13 @@ menu {
 }
 
 .button-1:hover {
-  background-color: #02b8dd;
-  color: white;
+  background-color: var(--cor002);
+  color: var(--cor004);
 }
 
 #features {
   padding: 50px 0;
   overflow: hidden;
-  background-color: #f2f2f2; 
-  
 }
 
 .features-list {
@@ -183,19 +184,17 @@ menu {
 
 .feature-content {
   padding: 20px;
-  position: relative;
- 
- 
 }
 
 .div-img {
   text-align: center;
 }
 
-#features ul li {
+#features #ul #li {
   border: 1px solid rgb(209, 208, 208);
   padding: 30px;
   margin-right: 20px;
+  margin-bottom: 30px;
   background-color: #d7d7d7;
   border-radius: 10px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.149);
@@ -203,23 +202,22 @@ menu {
 
 
 #primary-content {
-  background-color:  #f2f2f2;
   padding: 10px 0;
   text-align: center;
 }
 
-#primary-content h3 {
+#primary-content h2 {
  font-size: 1.3em;
   width: 400px;
  display: block;
  margin: 0 auto 20px auto;
- border-bottom: 1px solid #02b8dd;
+ border-bottom: 1px solid var(--cor002);
  padding: 0 0  20px 0;
 
 }
 
 .video-div{
-  background-color: var(--cor5);
+  background-color: var(--backgroudcolor);
   margin: 0px -20px 30px -20px;
   padding: 20px;
   padding-bottom: 58%;
@@ -260,8 +258,8 @@ menu {
   border-radius: 3px;
 }
 
-article h4 {
-  border-bottom: 1px solid #02b8dd;
+article h3 {
+  border-bottom: 1px solid var(--cor002);
   padding-bottom: 20px;
 }
 
@@ -271,51 +269,50 @@ article h4 {
 }
 
 .more-link {
-  border: 1px solid #02b8dd;
-  color: #02b8dd;
+  border: 1px solid var(--cor002);
+  color:  var(--cor002);
   padding: 6px 20px;
   border-radius: 3px;
 }
 
 .more-link:hover {
-  background-color: #02b8dd;
-  color: #fff;
+  background-color: var(--cor002);
+  color: var(--cor004);
 }
 
 
 #cta{
-  background-color:  #f2f2f2;
   padding: 50px 0;
   text-align: center;
 }
 
-#cta h3 {
+#cta h2 {
  font-size: 1.3em;
  width: 400px;
  display: block;
  margin: 0 auto 20px auto;
- border-bottom: 1px solid #02b8dd;
+ border-bottom: 1px solid var(--cor002);
  padding: 0 0  20px 0;
 }
 
 #cta .button-2 {
   display: inline-block;
   padding: 10px 30px;
-  border: 1px solid #02b8dd;
-  color: #02b8dd;
+  border: 1px solid var(--cor002);
+  color: var(--cor002);
   margin: 20px auto;
   border-radius: 3px;
 }
 
 #cta .button-2:hover {
-  background-color: #02b8dd;
-  color: #fff;
+  background-color: var(--cor002);
+  color: var(--cor004);
 }
 
 footer {
   padding: 60px 0;
-  background-color: #444;
-  color: #f2f2f2;
+  background-color: var(--cor001);
+  color: var(--backgroudcolor);
   text-align: center;
 }
 
@@ -342,19 +339,19 @@ footer {
 }
 
 #footer-links a{
-  color: white;
+  color: var(--cor004);
 }
 
 #footer-links ul li {
   margin: 10px 0;
-  color: white;
+  color: var(--cor004);
 }
 
-#footer-links h5 {
+#footer-links h4 {
   font-size: 1em;
   font-weight: bold;
   margin-bottom: 8px;
-  color: white;
+  color: var(--cor004);
 }
 
 .clear {
@@ -363,8 +360,8 @@ footer {
 
 /* Button styles */
 #back-to-top {
-  background-color: #02b8dd ;
-  color: #f2f2f2;
+  background-color: var(--cor002);
+  color: var(--backgroudcolor);
   border: none;
   padding: 5px;
   font-size: 0.9em;
@@ -373,5 +370,5 @@ footer {
 }
 
 #back-to-top:hover {
-  background-color: #777;
+  background-color: var(--cor003);
 }

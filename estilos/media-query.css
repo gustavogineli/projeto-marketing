@@ -67,9 +67,21 @@
   }
 
   #hero-image h2 {
-    margin: 80px 0 20px 0; /* Ajusta o espaçamento do título */
-    font-size: 1.2em; /* Ajusta o tamanho do título */
+    margin: 70px 0 5px 0; /* Ajusta o espaçamento do título */
   }
+ 
+.titulo-1 {
+  font-family: var(--fonte-destaque);
+  font-weight: 500;
+  font-size: 2em;
+}
+
+.titulo {
+  font-family: var(--fonte-destaque2);
+   text-align: center;
+   margin-bottom: 30px;
+   font-size: 1.4em;
+ }
 
   .features-list {
     flex-direction: column; /* Empilha os itens de características em coluna */
@@ -80,18 +92,18 @@
     padding: 50px 0 5px 0;
   } 
 
-  .features-list li {
+  .features-list #li {
     width: 100%; /* Ocupa toda a largura disponível */
     margin: 0 0 30px 0; /* Adiciona espaçamento entre os itens */
   }
 
-  #features ul li {
+  #features #ul #li {
     width: 75%; /* Ocupa toda a largura disponível */
     margin-right: 0;
     
   }
 
-  #primary-content h3, #cta h3  {
+  #primary-content h2, #cta h2  {
     font-size: 1.1em; /* Ajusta o tamanho do título */
     width: 100%; /* Ocupa toda a largura disponível */
     padding: 10px 0 20px 0; /* Ajusta o espaçamento interno */
@@ -148,10 +160,16 @@
   }
 
   #hero-image h2 {
-    margin: 100px 0 20px 0; /* Ajusta o espaçamento do título */
-    font-size: 1.3em; /* Ajusta o tamanho do título */
+    margin: 100px 0 0 0; /* Ajusta o espaçamento do título */
   }
+   
 
+.titulo-1 {
+  font-family: var(--fonte-destaque);
+  font-weight: 500;
+  font-size: 3em;
+}
+ 
   .features-list {
     flex-direction: row; /* Restaura a orientação dos itens para linha */
     justify-content: space-between; /* Espaçamento uniforme entre os itens */
@@ -159,15 +177,17 @@
 
   .features-list li {
     width: 30%; /* Define a largura fixa para os itens */
+    height: 30%;
     margin: 0; /* Remove a margem entre os itens */
   }
 
   #features ul li {
     width: 30%; /* Define a largura fixa para os itens */
+    height: 30%;
     margin-left: 20px; /* Adiciona margem entre os itens */
   }
 
-  #primary-content h3 {
+  #primary-content h2 {
     font-size: 1.3em; /* Ajusta o tamanho do título */
     width: 400px; /* Define uma largura fixa para o título */
     margin: 0 auto 20px auto; /* Centraliza o título horizontalmente */
