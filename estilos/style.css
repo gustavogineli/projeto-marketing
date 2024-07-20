@@ -30,6 +30,7 @@ p {
   line-height: 20px;
   margin-bottom: 20px;
   font-family: var(--fonte-padrao);
+  color:  #919191;
 }
 
 h1 {
@@ -83,24 +84,22 @@ strong {
 
 
 header {
- height: 80px;
+ height: 100px;
+ background-color: var(--cor004);
 }
-header > h1 {
-  overflow: hidden;
-  float: left;
-  margin-left: 200px;
-}
+
 header h1 {
-  
   color: var(--cor002);
   font-size: 1.4em;
   float: left ;
+  margin: 30px 30px 0 0;
+
 }
 header menu {
   float: right;
 }
 header menu ul li {
- 
+  color: #444;
   display:inline-block;
   margin-top: 20px;
   font-size: 0.9em;
@@ -112,7 +111,13 @@ header menu ul li a {
   text-transform: uppercase;
   display: block;
   margin-right: 20px;
- 
+}
+
+header menu a {
+  margin-top: 20px;
+  margin-right: 10px;
+  font-family: var(--fonte-destaque);
+  font-weight: 500;
 }
 
 span#burguer {
@@ -134,7 +139,7 @@ menu {
 }
 
 #hero-image h2 {
-  margin: 180px 0 0 0; }
+  margin: 180px 0 10px 0; }
 
 .titulo-1 {
   font-family: var(--fonte-destaque);
@@ -144,9 +149,10 @@ menu {
 }
 .titulo {
  font-family: var(--fonte-destaque2);
+ font-weight: 300;
   text-align: center;
   margin-bottom: 30px;
-  font-size: 1.8em;
+  font-size: 2.4em;
 }
 
 .button-1 {
@@ -161,7 +167,7 @@ menu {
   font-size: 1.3em;
   line-height: 50px;
   margin: 0 auto;
-
+  font-family: var(--fonte-padrao);
 }
 
 .button-1:hover {
@@ -200,6 +206,18 @@ menu {
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.149);
 }
 
+#features h3 {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-family: var(--fonte-destaque);
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+#features p {
+  font-family: var(--fonte-destaque);
+  
+}
 
 #primary-content {
   padding: 10px 0;
@@ -207,7 +225,9 @@ menu {
 }
 
 #primary-content h2 {
- font-size: 1.3em;
+  font-family: var(--fonte-destaque);
+  font-weight: 500;
+ font-size: 1.8em;
   width: 400px;
  display: block;
  margin: 0 auto 20px auto;
@@ -258,14 +278,27 @@ menu {
   border-radius: 3px;
 }
 
-article h3 {
+article .title-1 {
+  font-family: var(--fonte-destaque);
+  font-weight: 500;
+  font-size: 1.3em;
+  margin-top: 6px;
+}
+
+article .title {
   border-bottom: 1px solid var(--cor002);
+  font-family: var(--fonte-destaque);
+  font-weight: 500;
+  font-size: 1.3em;
+  padding-top: 4px;
   padding-bottom: 20px;
 }
 
 #secondary-content p {
-  padding-top: 10px;
-  padding-bottom: 20px;
+  color: #919191;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  font-style: italic;
 }
 
 .more-link {
@@ -287,12 +320,15 @@ article h3 {
 }
 
 #cta h2 {
- font-size: 1.3em;
+ font-size: 1.8em;
  width: 400px;
  display: block;
  margin: 0 auto 20px auto;
  border-bottom: 1px solid var(--cor002);
  padding: 0 0  20px 0;
+ font-family: var(--fonte-destaque);
+ font-weight: 500;
+ 
 }
 
 #cta .button-2 {
