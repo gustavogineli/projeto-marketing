@@ -19,30 +19,16 @@
   }
 
   header h1 {
-    margin-left: 15px; /* Ajusta a margem esquerda do título */
-    font-size: 1.3em; /* Reduz o tamanho da fonte */
+    display: none;
   }
 
-  span#burguer {
-    display: block; /* Mostra o ícone do menu */
-    cursor: pointer; /* Altera o cursor para indicar que é clicável */
-  }
-
-  menu {
-    display: none; /* Esconde os itens do menu por padrão */
-    position: absolute;
-    top: 60px; /* Ajusta a posição vertical */
-    right: 0;
-    background-color: #f2f2f2;
-    width: 100%;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    z-index: 1; /* Coloca o menu sobre os outros elementos */
-  }
-
-  menu.show {
-    display: block; /* Mostra os itens do menu quando a classe 'show' é aplicada */
-  }
+    menu {
+      display: block; /* Mostra os itens do menu */
+      position: relative; /* Restaura a posição padrão */
+      top: 0; /* Remove o ajuste de posição vertical */
+      width: auto; /* Restaura a largura automática */
+      box-shadow: none; /* Remove a sombra do menu */
+    }
 
   menu ul {
     padding: 0;
@@ -176,14 +162,14 @@
   }
 
   .features-list li {
-    width: 30%; /* Define a largura fixa para os itens */
-    height: 30%;
+    width: 35%; /* Define a largura fixa para os itens */
+    height: 35%;
     margin: 0; /* Remove a margem entre os itens */
   }
 
   #features ul li {
-    width: 30%; /* Define a largura fixa para os itens */
-    height: 30%;
+    width: 35%; /* Define a largura fixa para os itens */
+    height: 35%;
     margin-left: 20px; /* Adiciona margem entre os itens */
   }
 
